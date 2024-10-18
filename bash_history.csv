@@ -1,0 +1,105 @@
+1 ,2024-10-11-09:59:27, source /opt/conda/bin/activate
+2 ,2024-10-11-09:59:51, curl v2.wttr.in/London
+3 ,2024-10-11-10:00:29, curl v2.wttr.in/Paris
+4 ,2024-10-11-10:00:57, curl v2.wttr.in/Bangalore
+5 ,2024-10-11-10:04:09, source /opt/conda/bin/activate
+6 ,2024-10-11-10:07:15, source /opt/conda/bin/activate
+7 ,2024-10-11-10:07:33, curl v2.wttr.in/London
+8 ,2024-10-11-10:07:38, curl v2.wttr.in/Paris
+9 ,2024-10-11-10:07:59, curl v2.wttr.in/New York
+10 ,2024-10-11-10:08:04, curl v2.wttr.in/New-York
+11 ,2024-10-11-10:16:47, cd W02-Lab
+12 ,2024-10-11-10:16:52, mkdir data
+13 ,2024-10-11-10:16:54, cd data
+14 ,2024-10-11-10:18:41, curl "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m"
+15 ,2024-10-11-10:18:41, { "current": {; "time": "2022-01-01T15:00"; "temperature_2m": 2.4,; "wind_speed_10m": 11.9,; },; "hourly": {; "time": ["2022-07-01T00:00","2022-07-01T01:00", ...]; "wind_speed_10m": [3.16,3.02,3.3,3.14,3.2,2.95, ...],; "temperature_2m": [13.7,13.3,12.8,12.3,11.8, ...],; "relative_humidity_2m": [82,83,86,85,88,88,84,76, ...],; }
+16 ,2024-10-11-10:18:41, }
+17 ,2024-10-11-10:19:39, curl "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m"
+18 ,2024-10-11-10:20:13, cd
+19 ,2024-10-11-10:20:15, curl "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,precipitation&start=2024-10-11T00:00:00Z&end=2024-10-11T23:59:59Z&timezone=auto"
+20 ,2024-10-11-10:23:29, curl "https://archive-api.open-meteo.com/v1/archive?latitude=52.52&longitude=13.41&start_date=2023-10-11&end_date=2023-10-11&hourly=temperature_2m&timezone=auto"
+21 ,2024-10-11-10:23:59, cd W02-Lab/data
+22 ,2024-10-11-10:25:30, url https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,precipitation&start=2024-10-11T00:00:00Z&end=2024-10-11T23:59:59Z&timezone=auto weather_forecast_2024.json
+23 ,2024-10-11-10:26:26, curl https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,precipitation&start=2024-10-11T00:00:00Z&end=2024-10-11T23:59:59Z&timezone=auto > weather_forecast_2024.json
+24 ,2024-10-11-10:27:51, curl <https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,precipitation&start=2024-10-11T00:00:00Z&end=2024-10-11T23:59:59Z&timezone=auto> > weather_forecast_2024.json
+25 ,2024-10-11-10:30:49, curl https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,precipitation&start=2024-10-11T00:00:00Z&end=2024-10-11T23:59:59Z&timezone=auto > weather_forecast_2024.json
+26 ,2024-10-11-10:32:19, curl https://archive-api.open-meteo.com/v1/archive?latitude=52.52&longitude=13.41&start_date=2023-10-11&end_date=2023-10-11&hourly=temperature_2m&timezone=auto > historical_data.json
+27 ,2024-10-11-10:35:02, curl "https://archive-api.open-meteo.com/v1/archive?latitude=52.52&longitude=13.41&start_date=2023-10-11&end_date=2023-10-11&hourly=temperature_2m&timezone=auto" > historical_data.json
+28 ,2024-10-11-10:35:31, curl "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,precipitation&start=2024-10-11T00:00:00Z&end=2024-10-11T23:59:59Z&timezone=auto" > weather_forecast_2024.json
+29 ,2024-10-11-10:39:43, cd ..
+30 ,2024-10-11-10:40:05, import json
+31 ,2024-10-11-10:40:05, with open('./data/historical_data.json') as f:
+32 ,2024-10-11-10:40:05, historical_data = json.load(f)
+33 ,2024-10-11-10:40:05, with open('./data/weather_forecast_2024.json') as f:
+34 ,2024-10-11-10:40:05, weather_forecast = json.load(f)
+35 ,2024-10-11-10:01:43, source /opt/conda/bin/activate
+36 ,2024-10-11-10:01:47, curl v2.wttr.in/London
+37 ,2024-10-11-10:01:53, curl v2.wttr.in/Paris
+38 ,2024-10-11-10:01:59, curl v2.wttr.in/Madrid
+39 ,2024-10-11-10:02:57, curl v2.wttr.in/New York
+40 ,2024-10-11-10:03:06, curl v2.wttr.in/New-York
+41 ,2024-10-11-10:05:42, cd W02-Lab
+42 ,2024-10-11-09:54:53, mkdir W02-Lab
+43 ,2024-10-12-18:07:32, cd W03-Practice
+44 ,2024-10-12-18:07:36, mkdir data
+45 ,2024-10-12-18:07:40, mkdir code
+46 ,2024-10-18-09:40:55, cd W03-Lab
+47 ,2024-10-18-09:41:06, mkdir code
+48 ,2024-10-18-09:41:11, mkdir data
+49 ,2024-10-18-19:49:32, source /opt/conda/bin/activate
+50 ,2024-10-18-19:49:45, gh auth login
+51 ,2024-10-18-19:52:53, git clone git@github.com:sabaapasha/ds105a-w04-exercise.git
+52 ,2024-10-18-19:53:24, ls
+53 ,2024-10-18-19:53:32, cd ds105a-w04-exercise
+54 ,2024-10-18-19:53:42, git config --global core.editor "nano"
+55 ,2024-10-18-19:54:02, git config --global core.editor "nano"
+56 ,2024-10-18-19:54:28, ls
+57 ,2024-10-18-19:55:49, cd ..
+58 ,2024-10-18-19:55:57, rmdir ds105a-w04-exercise
+59 ,2024-10-18-19:56:19, gh auth login
+60 ,2024-10-18-19:57:45, git clone git@github.com:sabaapasha/ds105a-w04-exercise.git
+61 ,2024-10-18-19:58:12, cd ds105a-w04-exercise
+62 ,2024-10-18-19:58:14, ls
+63 ,2024-10-18-19:58:43, mkdir figures
+64 ,2024-10-18-19:58:45, cd figures
+65 ,2024-10-18-20:05:13, curl https://turkishporter.com/content/images/thumbs/0003352_antepliler-fresh-havuc-dilimi-baklava_550.png > image.png
+66 ,2024-10-18-20:05:17, ls
+67 ,2024-10-18-20:05:39, cd ..
+68 ,2024-10-18-20:05:43, status
+69 ,2024-10-18-20:05:49, git status
+70 ,2024-10-18-20:06:06, git add figures/image.png
+71 ,2024-10-18-20:06:17, git status
+72 ,2024-10-18-20:36:00, git commit -m "Add a figure that represents me"
+73 ,2024-10-18-20:36:06, git push
+74 ,2024-10-18-20:37:29, rmdir image.png
+75 ,2024-10-18-20:37:48, rm image.png
+76 ,2024-10-18-20:37:57, cd figures
+77 ,2024-10-18-20:38:02, rm image.png
+78 ,2024-10-18-20:40:00, curl https://en.wikipedia.org/wiki/Badminton#/media/File:Olympics_2012_Mixed_Doubles_Final.jpg > image.jpg
+79 ,2024-10-18-20:40:02, ls
+80 ,2024-10-18-20:40:26, cd ..
+81 ,2024-10-18-20:40:27, git status
+82 ,2024-10-18-20:40:38, git add figures/image.jpg
+83 ,2024-10-18-20:40:43, git status
+84 ,2024-10-18-20:41:37, git rm figures/image.png
+85 ,2024-10-18-20:41:47, git status
+86 ,2024-10-18-20:42:06, git commit -m "Add a figure that represents me"
+87 ,2024-10-18-20:42:18, git status
+88 ,2024-10-18-20:42:25, git push
+89 ,2024-10-18-20:43:57, cd figures
+90 ,2024-10-18-20:44:20, curl https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Olympics_2012_Mixed_Doubles_Final.jpg/1920px-Olympics_2012_Mixed_Doubles_Final.jpg > my_image.jpg
+91 ,2024-10-18-20:44:38, cd ..
+92 ,2024-10-18-20:44:43, git status
+93 ,2024-10-18-20:45:08, cd figures
+94 ,2024-10-18-20:45:08, ls
+95 ,2024-10-18-20:45:13, rm image.jpg
+96 ,2024-10-18-20:45:17, cd ..
+97 ,2024-10-18-20:45:19, git status
+98 ,2024-10-18-20:45:58, git rm figures/image.jpg
+99 ,2024-10-18-20:46:05, git add figures/my_image.jpg
+100 ,2024-10-18-20:46:08, git status
+101 ,2024-10-18-20:46:10, git push
+102 ,2024-10-18-20:47:21, git commit -m "Add a figure that represents me"
+103 ,2024-10-18-20:47:35, git status
+104 ,2024-10-18-20:47:43, git push
+105 ,2024-10-18-20:51:30, print-history > bash_history.csv
