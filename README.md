@@ -5,6 +5,6 @@ Hello! My name is Sabaa and I'm a 3rd year International Social and Public Polic
 
 ## The Contents of This Repository
 This repository contains my notes, as well as coding demonstrations, on the following topics:
-- ![Shell Commands](w01/week01 notebook.ipynb)
-- ![Creating and Updating Variables](w01/week01 notebook.ipynb)
+- [Shell Commands](https://github.com/sabaapasha/ds105a-w04-exercise/blob/main/w01/week01.ipynb#L35)
+- [Creating and Updating Variables](w01/week01 notebook.ipynb)
 - ![Data Types](w01/week01 notebook.ipynb)
